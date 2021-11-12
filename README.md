@@ -6,6 +6,8 @@ Learn how to load JS dynamically for the tables that have entries with die rolls
 Create Career Path Images with transparent backgrounds and multiple sizes for srcset
 Find more time
 
+11/12/21  Spent two hours trying to get tailwind to work with webstorm some progress but not much.
+
 11/11/21  I started working on the tables for the Adept advances.  There are going to be a lot of tables in this section.  Do I want to load them all at once in the HTML or would this be a good time to revisit AJAX?
 
 11/7/2021 Made some small changes to the HTML to accomidate the new navagation scheme.  Mostly worked on getting git to work with Webstorm.  Made some progress.
