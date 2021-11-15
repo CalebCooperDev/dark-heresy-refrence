@@ -1,0 +1,19 @@
+{
+  "name": "DarkHeresyReferenceMain",
+  "version": "1.0.0",
+  "dependencies": {},
+  "main": "DarkHeresy.js",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
+    "vite": "^2.6.14"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
