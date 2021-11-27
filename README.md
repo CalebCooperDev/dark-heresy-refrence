@@ -5,6 +5,8 @@ TODO: Learn how to load JS dynamically for the tables that have entries with die
 
 11/27/21 Tried to get routing working with the history API.  Made a little progress but the previous urls dont clear so I just get a string of urls. Each time the link is clicked the new url is appended to the end of the old.
 
+After being unable to let it go I got it working... mostly.  The navagation works but bookmarking is still an issue.
+
 11/21/21  Learned about the history API. Might solve my navagation issues
 
 11/15/21 Overwrote the README file so I got to learn a little about rolling back a file change.
