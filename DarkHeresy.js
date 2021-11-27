@@ -10,12 +10,18 @@ function navClickEvent() {
   container.addEventListener('click', function (e) {
     if (e.target != e.currentTarget) {
       e.preventDefault();
-      let data = e.target.getAttribute('href');
-      history.pushState(data, null, data);
-
+      let data = e.target.getAttribute('data-name');
+      let url = data + '.html';
+      let page = e.target.getAttribute('href');
+      loadDoc(page)
+      history.pushState(page, null, url);
+console.log(e.state);
     }
-    e.stopPropagation();
+
   }, false);
 
+  window.addEventListener('popstate', function(e) {
+    loadDoc(e.state);
+  });
 }
 window.onload = navClickEvent;
