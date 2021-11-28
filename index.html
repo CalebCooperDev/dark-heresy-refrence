@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dark Heresy Reference</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="build/tailwind.css" media="screen" />
-        <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-        <script type="text/javascript" src="DarkHeresy.js"></script>
-      </head>
-<body>
-<aside class="">
-  <ul class="font-bold">
-      <li >Home</li>
+<html class="h-full w-full">
+<head>
+    <title>Dark Heresy Reference</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="build/tailwind.css" media="screen"/>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="DarkHeresy.js"></script>
+</head>
+<body class="max-w-4xl mx-auto">
+<header class=" p-8 bg-gray-300 h-44">
+    <div class="grid grid-cols-5  max-h-full">
+        <h1 class="col-span-3 text-4xl ">Dark Heresy Reference</h1>
+        <div class="col-span-2 max-h-full">
+            <img src="Inquisiton.png" class="h-1/4">
+        </div>
+    </div>
+</header>
 
-      <li>Career Paths
-          <div class="navContainer">
-          <ul>
-              <li>
-                  <a href="CareerPaths/Adept/Character_Adept.html" >Adept</a>
-              </li>
-              <li>
-                  <a href="careerpaths/assassin/assassin.html">assassin</a>
-              </li>
-          </ul>
-          </div>
-      </li>
+<div class="grid grid-cols-6">
+    <aside class="col-span-1 bg-gray-100">
+        <ul class="font-bold">
+            <li><a href="index.html">Home</a></li>
 
-  </ul>
-</aside>
-<div id="content">
-  
+            <li>Career Paths
+                <div class="navContainer">
+                    <ul>
+                        <li>
+                            <a href="CareerPaths/Adept/Character_Adept.html" data-name="adept">Adept</a>
+                        </li>
+                        <li>
+                            <a href="careerpaths/assassin/assassin.html" data-name="assassin">assassin</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+    </aside>
+    <article id="content" class="col-span-5 p-1.5">
+
+    </article>
 </div>
-
 </body>
 </html>

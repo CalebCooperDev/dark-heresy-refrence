@@ -3,6 +3,11 @@ function loadDoc(fileName) {
   $("#content").load(fileName);
 }
 
+
+/**
+ * click event for aside navigation.  onclick of link loads relevant HTML using AJAX and updates window.history
+ * object to maintain ease of navigation
+ */
 function navClickEvent() {
 
   let container = document.querySelector('.navContainer');
@@ -15,7 +20,7 @@ function navClickEvent() {
       let page = e.target.getAttribute('href');
       loadDoc(page)
       history.pushState(page, null, url);
-console.log(e.state);
+
     }
 
   }, false);
