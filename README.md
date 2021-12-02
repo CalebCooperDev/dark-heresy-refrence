@@ -1,7 +1,8 @@
 dark-heresy-refrence
 A web based reference for the RPG Dark Heresy
 
-TODO: Learn how to load JS dynamically for the tables that have entries with die rolls Create Career Path Images with transparent backgrounds and multiple sizes for srcset Find more time
+12/2/21 Removed the url parameter from the pushState method call.  Now when it reloads it goes to the home page.  Not ideal but better than a 404. Also got some of the styling
+for the nav bar squared away. It now takes up the height of the screen rather than taking on the height of the content of the body.
 
 11/28/21 Made some progress with basic styling and layout. Looks like I'll have to do the accordion effect for the nav bar manually
 
