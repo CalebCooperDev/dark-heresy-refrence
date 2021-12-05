@@ -3,16 +3,7 @@ function loadDoc(fileName) {
   $("#content").load(fileName);
 }
 
-/**
- * used to test the random number generator rollEm() to make sure the numbers returned are reasonably random.
- */
-function testRand() {
-  let randArray = [];
-  for (let i = 0; i < 1000; i++) {
-    randArray[i] = rollEm(1, 10)
-  }
-  console.log(randArray)
-}
+
 
 /**
  * multi-purpose random number generator to simulate the rolling of any type of die.
@@ -26,6 +17,12 @@ function rollEm(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
 }
 
+function psykerSideEffects() {
+
+  $("a[data-name='psyker']").click(function() {
+    $.getScript("CareerPaths/Psyker/Psyker.js");
+  })
+}
 /**
  * click event for aside navigation.  onclick of link loads relevant HTML using AJAX and updates window.history
  * object to maintain ease of navigation
@@ -48,5 +45,7 @@ loadDoc('cover.html');
   window.addEventListener('popstate', function(e) {
     loadDoc(e.state);
   });
+
+  psykerSideEffects();
 }
 window.onload = navClickEvent;
