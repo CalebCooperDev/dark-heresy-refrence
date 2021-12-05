@@ -1,6 +1,8 @@
 dark-heresy-refrence
 A web based reference for the RPG Dark Heresy
 
+12/5/21 Made some progress getting JavaScript loaded dynamically with jQuery.  Got it to log to console but haven't managed to get click event handlers to work
+
 12/2/21 Removed the url parameter from the pushState method call.  Now when it reloads it goes to the home page.  Not ideal but better than a 404. Also got some of the styling
 for the nav bar squared away. It now takes up the height of the screen rather than taking on the height of the content of the body.
 
