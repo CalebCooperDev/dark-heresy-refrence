@@ -23,11 +23,23 @@ function psykerSideEffects() {
     $.getScript("CareerPaths/Psyker/Psyker.js");
   })
 }
+
+function navToggle() {
+  $("#careerpaths > div").hide();
+
+  $("li#careerpaths").click(function(){
+    $("li#careerpaths > div.navContainer").show();
+
+  });
+}
 /**
  * click event for aside navigation.  onclick of link loads relevant HTML using AJAX and updates window.history
  * object to maintain ease of navigation
  */
 function navClickEvent() {
+
+navToggle()
+
 loadDoc('cover.html');
   let container = document.querySelector('.navContainer');
 //I tried to use jquery for this but it didn't work. perhaps something to try another time
